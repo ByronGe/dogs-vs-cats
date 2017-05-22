@@ -6,14 +6,14 @@
 ### 项目概述
 
 “猫狗大战”是[Kaggle](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition)的一个竞赛项目，从下图的排行榜可以看到，目前最好的模型可以实现约0.033的LogLoss。其实，在包括更加复杂的ImageNet问题上，基于CNN的图像识别算法可以远远超过人类的表现，这也是这个项目所要达到的目标。
-<img width="500" height="400" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/1.png"/>
+<img width="500" height="300" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/1.png"/>
 
 在这过程中，主要有数据探索、可视化、算法和技术的调研选取、基准模型的选择、数据预处理、模型的构建与优化、模型的评价与验证等步骤，最终获得能够精准识别猫狗的神经网络模型。
 
 ### 数据的探索
 在该项目中，输入数据为jpeg格式的图片，kaggle上提供的训练数据集包含了25,000张图片，其中猫和狗各12,500张，每一张图片对应一种类别，kaggle还提供了12,500张没有标记的图片用于测试。
 
-<img width="300" height="200" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/3.png"/>
+<img width="300" height="150" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/3.png"/>
 
 ### 探索性可视化
 对 train/文件夹中的属于猫和狗的部分图片分别进行可视化，如下所示:
@@ -23,7 +23,7 @@
 
 通过对图片中的色彩-像素比进行IQR分析，可以发现很多分辨率低、无关的图片，我们需要把不合格的图片删除，下面是其中一些不合格的图片：
 
-<img width="600" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/5.png"/>
+<img width="900" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/5.png"/>
 
 此外，通过探索数据，我们已经知道，图片中猫狗的拍摄角度不尽相同，而且猫狗占整张图片的比例也有所差别。为了让模型尽量不受这些因素的干扰，增强模型的泛化能力，需要对原始图片进行一些随机操作，比如旋转、剪切变换、缩放、水平翻转等。
 
@@ -41,7 +41,7 @@ Keras提供的图片生成器ImageDataGenerator可以很方便地对图片进行
 
 ### 模型可视化
 
-<img width="300" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/7.png"/>
+<img width="600" height="500" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/7.png"/>
 
 ### 评价指标
 1、在模型的训练过程中，可使用准确率作为评估指标：因为kaggle提供的用于训练的图片分类是已知的，使用准确率评估模型相对直观且计算简单，便于模型更新迭代；

@@ -23,7 +23,7 @@
 
 通过对图片中的色彩-像素比进行IQR分析，可以发现很多分辨率低、无关的图片，我们需要把不合格的图片删除，下面是其中一些不合格的图片：
 
-<img width="900" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/5.png"/>
+<img width="900" height="550" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/5.png"/>
 
 此外，通过探索数据，我们已经知道，图片中猫狗的拍摄角度不尽相同，而且猫狗占整张图片的比例也有所差别。为了让模型尽量不受这些因素的干扰，增强模型的泛化能力，需要对原始图片进行一些随机操作，比如旋转、剪切变换、缩放、水平翻转等。
 
@@ -37,7 +37,7 @@ Keras提供的图片生成器ImageDataGenerator可以很方便地对图片进行
         	horizontal_flip=True,
         	fill_mode='nearest'
         	)
-<img width="300" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/6.png"/>
+<img width="500" height="600" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/6.png"/>
 
 ### 模型可视化
 

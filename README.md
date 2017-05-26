@@ -17,7 +17,8 @@
 <img width="350" height="150" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/3.png"/>
 
 ### 探索性可视化
-对 train/文件夹中的属于猫和狗的部分图片分别进行可视化，如下所示:
+对 train/文件夹中，属于猫和狗的部分图片分别进行可视化，如下所示:
+
 <img width="400" height="700" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/4.png"/>
 
 ### 数据预处理

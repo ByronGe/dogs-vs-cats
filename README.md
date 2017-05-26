@@ -14,7 +14,7 @@
 ### 数据的探索
 在该项目中，输入数据为jpeg格式的图片，kaggle上提供的训练数据集包含了25,000张图片，其中猫和狗各12,500张，每一张图片对应一种类别，kaggle还提供了12,500张没有标记的图片用于测试。
 
-<img width="300" height="150" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/3.png"/>
+<img width="350" height="150" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/3.png"/>
 
 ### 探索性可视化
 对 train/文件夹中的属于猫和狗的部分图片分别进行可视化，如下所示:

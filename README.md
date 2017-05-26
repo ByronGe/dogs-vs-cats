@@ -19,7 +19,7 @@
 ### 探索性可视化
 对 train/文件夹中，属于猫和狗的部分图片分别进行可视化，如下所示:
 
-<img width="500" height="700" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/4.png"/>
+<img width="450" height="700" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/4.png"/>
 
 ### 数据预处理
 
@@ -27,7 +27,7 @@
 
 <img width="900" height="550" src="https://github.com/TIFOSI528/dogs-vs-cats/raw/master/raw/5.png"/>
 
-此外，通过探索数据，我们已经知道，图片中猫狗的拍摄角度不尽相同，而且猫狗占整张图片的比例也有所差别。为了让模型尽量不受这些因素的干扰，增强模型的泛化能力，需要对原始图片进行一些随机操作，比如旋转、剪切变换、缩放、水平翻转等。
+此外，通过对图片数据的探索，我们可以知道，图片中猫狗的拍摄角度不尽相同，而且猫狗占整张图片的比例也有所差别。为了让模型尽量不受这些因素的干扰，增强模型的泛化能力，需要对原始图片进行一些随机操作，比如旋转、剪切变换、缩放、水平翻转等。
 
 Keras提供的图片生成器ImageDataGenerator可以很方便地对图片进行提升。简单地对train/cat.0.jpg做一些旋转、剪切变换、缩放等随机操作，可以得到以下结果：
 
@@ -86,7 +86,7 @@ from keras.preprocessing.image import ImageDataGenerator: 图片生成器，可�
 import h5py: 用于保存模型的训练参数
 
 
-#### Reference
+### Reference
 [1]崔天依. 计算机视觉技术及其在自动化中的应用[J]. 电脑知识与技术, 2016 (3).
 
 [2] “猫狗大战”数据集，kaggle，https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition
